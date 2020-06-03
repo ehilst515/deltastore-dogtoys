@@ -1,5 +1,9 @@
+* li{
+    list-style: none;
+}
+
 body {
-    color: #CFFFB0;
+    color: #58355E;
     margin: 0
   }
 header, footer{
@@ -7,6 +11,11 @@ header, footer{
     color: #58355E;
     background-color: #27ABE1;
 }
+
 header h1 {
     text-shadow: 2px 2px 2px rgb(44, 21, 48);
+  }
+
+  main{
+    background-color: #CFFFB0;
   }
