@@ -16,7 +16,8 @@ img {
 }
 
 .priceTitle {
-  color: red
+  color: orange;
+  font-style: larger;
 }
 
 body li {
