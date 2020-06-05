@@ -1,6 +1,9 @@
 "use strict";
 
-function headerMessage(){
+console.log("connected!");
+
+function fullMessage(){
+
 //variable decleration
 var today = new Date();
 var hourNow = today.getHours();
@@ -11,8 +14,7 @@ var message;
 var shoppingAmmount;
 var shoppingDescription;
 
-
-//timed greeting
+//timed greeting (taken from lab 6)
 if (hourNow > 18) {
     greeting = 'Good evening,';
 }   else if (hourNow > 12){
@@ -29,7 +31,7 @@ if (hourNow > 18) {
  shoppingAmmount = prompt("How many items are you looking for?")
  message = ' We hope you can find '
 
- //number of items looking for
+ //change shopingDescription in full message based on the number of items looking for
  if (shoppingAmmount >= 11){
      shoppingDescription = 'more than a dozen items';
 }     else if (shoppingAmmount < 11 && shoppingAmmount >= 7 ){
@@ -42,15 +44,10 @@ if (hourNow > 18) {
         shoppingDescription = 'something fun';
 }
 
-
-
  //store inputs
 console.log(yourName);
 console.log(dogName);
 console.log(shoppingDescription);
 
-//output: write full message
-document.write('<h3>' + greeting + yourName + '!' + message + shoppingDescription + ' for ' + dogName + '!' + '</h3>');
-
-
+return '<h3>' + greeting + yourName + '!' + message + shoppingDescription + ' for ' + dogName + '!' + '</h3>';
 }
